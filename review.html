@@ -17,6 +17,83 @@
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .review-shadow {
+            -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(0, 0, 0, 0.10);
+            -moz-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(0, 0, 0, 0.10);
+            border-radius: 16px;
+            background: #fff;
+            transition: box-shadow 0.3s;
+            margin-bottom: 32px;
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0;
+        }
+
+        .review-shadow:hover {
+            box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.22), 0 3px 8px rgba(0, 0, 0, 0.13);
+        }
+
+        .review-shadow .blog-entry {
+            border-radius: 16px;
+            overflow: hidden;
+            background: transparent;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-shadow .block-20 {
+            border-radius: 0;
+            margin: 0;
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        .review-shadow .text {
+            padding: 24px 20px 20px 20px;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .row.d-flex {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        @media (min-width: 768px) {
+            .row.d-flex> .review-shadow {
+                margin-left: 12px;
+                margin-right: 12px;
+                width: calc(33.333% - 24px);
+                max-width: calc(33.333% - 24px);
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .row.d-flex> .review-shadow {
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .review-shadow .block-20 {
+                height: 160px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +109,7 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -47,7 +124,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a href="giftshop.html" class="nav-link">GIFTSHOP</a></li>
-                    <li class="nav-item active"><a href="review.html" class="nav-link">REVIEW</a></li>
+                    <li class="nav-item"><a href="review.html" class="nav-link">REVIEW</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
                     <li class="nav-item"><a href="make-by.html" class="nav-link">MAKE BY</a></li>
                 </ul>
@@ -91,7 +168,7 @@
             <div class="row d-flex">
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review1.jpg');">
@@ -111,7 +188,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review2.jpg');">
@@ -131,7 +208,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review3.jpg');">
@@ -150,8 +227,8 @@
                 </div>
                 <!-- จบรีวิว -->
 
-                                <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <!-- เริ่มรีวิว -->
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review4.jpg');">
@@ -171,7 +248,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review5.jpg');">
@@ -191,7 +268,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review6.jpg');">
@@ -211,7 +288,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review7.jpg');">
@@ -231,7 +308,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review8.jpg');">
@@ -251,7 +328,7 @@
                 <!-- จบรีวิว -->
 
                 <!-- เริ่มรีวิว -->
-                <div class="col-md-4 d-flex ftco-animate">
+                <div class="col-md-4 d-flex ftco-animate review-shadow">
                     <div class="blog-entry align-self-stretch">
                         <a href="#" class="block-20 rounded"
                             style="background-image: url('images/review/review9.webp');">
