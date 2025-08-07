@@ -32,7 +32,7 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item"><a href="giftshop.html" class="nav-link">GIFTSHOP</a></li>
                     <li class="nav-item"><a href="review.html" class="nav-link">REVIEW</a></li>
-                    <li class="nav-item active"><a href="contact.html" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
                     <li class="nav-item"><a href="make-by.html" class="nav-link">MAKE BY</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -77,9 +77,9 @@
             <div class="row no-gutters slider-text align-items-end">
                 <div class="col-md-12 ftco-animate pb-5">
                     <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home<i
-                                    class="ion-ios-arrow-forward"></i></a></span><span>> Contact <i
+                                    class="ion-ios-arrow-forward"></i></a></span><span>> Register <i
                                 class="ion-ios-arrow-forward"></i></span></p>
-                    <h1 class="mb-0 bread">CONTACT </h1>
+                    <h1 class="mb-0 bread">REGISTER </h1>
                 </div>
             </div>
         </div>
@@ -89,70 +89,51 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class="wrapper">
-                        <div class="row mb-5">
-                            <div class="col-md-4">
-                                <div class="dbox w-100 text-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-map-marker"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><span>ที่อยู่ :</span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="dbox w-100 text-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-phone"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><span>โทร :</span> <a href="tel://1234567920">037 217 300</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="dbox w-100 text-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-globe"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><span>Website</span> <a href="https://www.kmutnb.ac.th/">kmutnb.ac.th/</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row no-gutters">
                             <div class="col-md-7">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h3 class="mb-4">Contact Us</h3>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <h3 class="mb-4">Welcome</h3>
+                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm" >
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="name">ชื่อลูกค้า</label>
+                                                    <label class="label" for="name">Username</label>
                                                     <input type="text" class="form-control" name="name" id="name"
                                                         placeholder="Name">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="email">เบอร์โทร</label>
-                                                    <input type="email" class="form-control" name="email" id="email"
+                                                    <label class="label" for="email">Password</label>
+                                                    <input type="password" class="form-control" name="password" id="password"
+                                                        placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="label" for="email">Email</label>
+                                                    <input type="email" class="form-control" name="Email" id="Email"
                                                         placeholder="Email">
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
+                                            <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="label" for="#">เรื่องที่สอบถาม</label>
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
-                                                        rows="4" placeholder="Message"></textarea>
+                                                    <label class="label" for="email">Phone</label>
+                                                    <input type="number" class="form-control" name="Phone" id="Phone"
+                                                        placeholder="Password">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="submit" value="Send Message" class="btn btn-primary">
-                                                    <div class="submitting"></div>
+                                                    <label class="label" for="#">ที่อยู่</label>
+                                                    <textarea name="address" class="form-control" id="address" cols="20"
+                                                        rows="4" placeholder="address"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="form-group">
+                                                    <a type="submit" href="index.html" value="" class="btn btn-primary">
+                                                    <div class="submitting"></div>confirm</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -160,7 +141,7 @@
                                 </div>
                             </div>
                             <div class="col-md-5 d-flex align-items-stretch">
-                                <div class="info-wrap w-100 p-5 img" style="background-image: url(images/contact/con1.jpg);">
+                                <div class="info-wrap w-100 p-5 img" style="background-image: url(images/contact/con3.jpg);">
                                 </div>
                             </div>
                         </div>
@@ -169,11 +150,6 @@
             </div>
         </div>
     </section>
-
-    <div class="map">
-        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.5303427988592!2d101.365459!3d14.163686999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c52d1517a368f%3A0xdb2834d0125dc485!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4Lie4Lij4Liw4LiZ4LiE4Lij4LmA4Lir4LiZ4Li34LitIOC4p-C4tOC4l-C4ouC4suC5gOC4guC4leC4m-C4o-C4suC4iOC4teC4meC4muC4uOC4o-C4tQ!5e0!3m2!1sth!2sth!4v1754580361267!5m2!1sth!2sth" width="500" height="500 " style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </center></div>
-    
     <footer class="footer">
         <div class="container">
             <div class="row">
