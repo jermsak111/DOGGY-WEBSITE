@@ -8853,9 +8853,9 @@ textarea.form-control {
   padding: 0;
   overflow: hidden;
   background: #fff;
-  -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 24px 48px #757676;
+  -moz-box-shadow: 0px 24px 48px #757676;
+  box-shadow: 0px 24px 48px #757676;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -8909,15 +8909,15 @@ textarea.form-control {
     font-style: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto; }
     .block-7 .btn-primary:hover, .block-7 .btn-primary:focus {
       background: #7b5b11 !important;
       color: #fff; }
   .block-7:hover, .block-7:focus {
-    -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
-    box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11); }
+    -webkit-box-shadow: 0px 24px 48px  #000000;
+    -moz-box-shadow: 0px 24px 48px  #000000;
+    box-shadow: 0px 24px 48px #000000; }
 
 .ftco-appointment {
   background-position: center center !important;
@@ -9059,6 +9059,8 @@ textarea.form-control {
   .footer .ftco-footer-social li a {
     background: rgba(255, 255, 255, 0.1);
     color: #7b5b11; }
+  .footer .list-unstyled li a.py-2.d-block:hover {
+  color: #ffc107 !important;}
 
 .ftco-footer-social li {
   list-style: none;
