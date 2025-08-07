@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DOGGY</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/dog.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+	/* ปิด sidebar และ overlay เป็นค่าปกติ */
+	.offcanvas-custom,
+	.offcanvas-overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		/* ← เปลี่ยนจาก left: 0 เป็น right: 0 */
+		left: auto;
+		/* เพิ่มบรรทัดนี้เพื่อกันซ้อนกับ left */
+		height: 100%;
+		z-index: 1050;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	/* Sidebar */
+	.offcanvas-custom {
+		width: 300px;
+		background-color: #fff;
+		box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+		/* เงาจากขวา */
+		transform: translateX(100%);
+		overflow-y: auto;
+	}
+
+	/* Header และ body */
+	.offcanvas-header {
+		padding: 16px;
+		background: #f1f1f1;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.offcanvas-body {
+		padding: 16px;
+	}
+
+	/* ปุ่มปิด */
+	.btn-close {
+		font-size: 24px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	/* ปุ่มเปิด */
+	.btn-open {
+		padding: 10px 20px;
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+	}
+
+	/* overlay ด้านหลัง */
+	.offcanvas-overlay {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		transform: translateX(-100%);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	/* แสดง sidebar */
+	.offcanvas-custom.active {
+		transform: translateX(0);
+	}
+
+	/* แสดง overlay */
+	.offcanvas-overlay.active {
+		transform: translateX(0);
+		opacity: 1;
+	}
+</style>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/dog.png" alt="dog icon" width="50"> DOGGY CAFE
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							MENU
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="menu-main.html">MENU MAIN</a>
+							<a class="dropdown-item" href="menu-cake.html">MENU CAKE</a>
+							<a class="dropdown-item" href="menu-drink.html">MENU DRINK</a>
+							<a class="dropdown-item" href="menu-coffee.html">MENU COFFEE</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="giftshop.html" class="nav-link">GIFTSHOP</a></li>
+					<li class="nav-item"><a href="review.html" class="nav-link">REVIEW</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+					<li class="nav-item"><a href="make-by.html" class="nav-link">MAKE BY</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item ml-auto">
+						<a href="#" class="nav-link">
+							<span class="fa fa-heart"></span>
+						</a>
+					</li>
+					<li class="nav-item ml-auto">
+						<a href="#" class="nav-link">
+							<span class="fa fa-shopping-cart"></span>
+						</a>
+					</li>
+					<li class="nav-item ml-auto">
+						<a href="login.html" class="nav-link">
+							<span class="fa fa-user"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero-wrap hero-wrap-2">
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end">
+				<div class="col-md-12 ftco-animate pb-5">
+					<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home<i
+									class="ion-ios-arrow-forward"></i></a></span><span>> MENU <i
+								class="ion-ios-arrow-forward"></i></span></p>
+					<h1 class="mb-0 bread">MENU CAKE </h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row">
+
+				<!-- เริ่มเมนู -->
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7">
+						<div class="work mb-4 img d-flex align-items-end"
+							style="background-image: url(images/cake/cake1.jpg);">
+							<a href="images/cake/cake1.jpg"
+								class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="fa fa-expand"></span>
+							</a>
+							<div class="desc w-100 px-4">
+								<div class="text w-100 mb-3">
+									<span>CAKE</span>
+									<h2>เค้กนมสด</h2>
+								</div>
+							</div>
+						</div>
+						<div class="text-center p-4">
+							<span class="excerpt d-block">เค้กนมสด</span>
+							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
+							<a href="#" onclick="openSidebar()" class="btn btn-primary d-block px-2 py-3">Add to
+								cart</a>
+						</div>
+					</div>
+				</div>
+				<!-- จบเมนู -->
+				 <!-- เริ่มเมนู -->
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7">
+						<div class="work mb-4 img d-flex align-items-end"
+							style="background-image: url(images/cake/cake2.jpg);">
+							<a href="images/cake/cake2.jpg"
+								class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="fa fa-expand"></span>
+							</a>
+							<div class="desc w-100 px-4">
+								<div class="text w-100 mb-3">
+									<span>CAKE</span>
+									<h2>เค้กสตอเบอรี่</h2>
+								</div>
+							</div>
+						</div>
+						<div class="text-center p-4">
+							<span class="excerpt d-block">เค้กสตอเบอรี่</span>
+							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
+							<a href="#" onclick="openSidebar()" class="btn btn-primary d-block px-2 py-3">Add to
+								cart</a>
+						</div>
+					</div>
+				</div>
+				<!-- จบเมนู -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Sidebar -->
+				<div id="offcanvasSidebar" class="offcanvas-custom">
+					<div class="offcanvas-header">
+						<h2>CART</h2>
+						<button onclick="closeSidebar()" class="btn-close">&times;</button>
+					</div>
+					<div class="offcanvas-body">
+						<p>รายการเมนูที่สั่ง</p>
+						<li>เค้กสตอเบอรี่</li>
+						<li>เค้กนมสด</li>
+						<li>น้ำส้ม</li>
+						<li>แก้วน้ำลายน้องหมา</li>
+						<br>
+						<a href="order.html" class="btn btn-success d-block px-2 py-3">ยืนยันออเดอร์</a>
+					</div>
+				</div>
+
+
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		function openSidebar() {
+			document.getElementById('offcanvasSidebar').classList.add('active');
+			document.getElementById('offcanvasOverlay').classList.add('active');
+		}
+
+		function closeSidebar() {
+			document.getElementById('offcanvasSidebar').classList.remove('active');
+			document.getElementById('offcanvasOverlay').classList.remove('active');
+		}
+	</script>
+</body>
+
+</html>
