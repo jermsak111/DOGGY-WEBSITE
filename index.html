@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="images/dog.png" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -17,6 +18,86 @@
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body, .btn{ font-family: 'Mitr', 'Montserrat', Arial, sans-serif; }
+		.hero-content {
+			background: rgba(255,255,255,0.90);
+			border-radius: 18px;
+			padding: 32px 24px 24px 24px;
+			box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+			max-width: 480px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.hero-content h1 {
+			font-size: 2.1rem;
+			font-weight: 600;
+			color: #d2691e;
+			margin-bottom: 12px;
+			text-shadow: 0 0px 15px #ff8b38d5;
+			
+		}
+		.hero-content .subtitle {
+			font-size: 1.1rem;
+			color: #333;
+			margin-bottom: 18px;
+		}
+		.hero-content .cafe-title {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: #ffb347;
+			margin-bottom: 10px;
+			letter-spacing: 1px;
+			text-shadow: 0 0px 15px #ffba89d5;
+		}
+		.hero-content .cafe-desc {
+			font-size: 1.2rem;
+			color: #444;
+			margin-bottom: 24px;
+		}
+		.hero-content .btn-group {
+			display: flex;
+			justify-content: center;
+			gap: 12px;
+			flex-wrap: wrap;
+		}
+		.hero-content .btn {
+			font-size: 1rem;
+			padding: 12px 28px;
+			
+		}
+		@media (max-width: 767px) {
+			.hero-content {
+				padding: 18px 8px 18px 8px;
+				max-width: 98vw;
+			}
+			.hero-content h1, .hero-content .cafe-title {
+				font-size: 1.3rem;
+			}
+			.hero-content .cafe-title {
+				font-size: 1.7rem;
+			}
+			.hero-content .cafe-desc, .hero-content .subtitle {
+				font-size: 1rem;
+			}
+			.hero-content .btn {
+				font-size: 0.95rem;
+				padding: 10px 18px;
+			}
+			.ftco-footer-social {
+				display: flex;
+				justify-content: center;
+				gap: 60px !important;
+			}
+			.ftco-footer-social li {
+				margin: 0 !important;
+			}
+			/* เพิ่มระยะห่างแนวตั้งระหว่าง services */
+			.ftco-section .row > div[class*="col-"] {
+				margin-bottom: 60px;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -75,24 +156,15 @@
 	<div class="hero-wrap js-fullheight" style="background-image: url('images/bg.jpg');"
 		data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
-				data-scrollax-parent="true">
-				<div class="col-md-8 ftco-animate ">
-					<h1>Woof! Woof! Welcome To Sit Sip</h1>
-					<h1>Smile Doggy CAFÉ</h1>
-					<h1>Coffee & Dessert</h1>
-					<hr class="separator-line">
-					<p class="text">
-					<p style="color: rgb(0, 0, 0);">เครื่องดื่มดี นั่งเพลิน บริการทุกระดับประทับใจสไตล์โฮ่งๆ</p>
-					<p><a href="#" class="btn btn-primary py-3 px-4">Shop Now <span
-								class="ion-ios-arrow-forward"></span></a>
-						<a href="#" class="btn btn-primary  py-3 px-4">GIFTSHOP <span
-								class="ion-ios-arrow-forward"></span></a>
-					</p>
-				</div>
-				<div class="col-md-4 ftco-animate ">
-
+		<div class="container h-100 d-flex align-items-center justify-content-center">
+			<div class="hero-content">
+				<h1>Woof! Woof! Welcome To Sit Sip</h1>
+				<div class="subtitle">เครื่องดื่มดี นั่งเพลิน บริการทุกระดับประทับใจสไตล์โฮ่งๆ</div>
+				<div class="cafe-title">Smile Doggy CAFÉ</div>
+				<div class="cafe-desc">Coffee & Dessert</div>
+				<div class="btn-group">
+					<a href="#" class="btn btn-primary py-3 px-4">Shop Now <span class="ion-ios-arrow-forward"></span></a>
+					<a href="#" class="btn btn-primary py-3 px-4">GIFTSHOP <span class="ion-ios-arrow-forward"></span></a>
 				</div>
 			</div>
 		</div>
@@ -194,17 +266,6 @@
 			</div>
 			<div class="row mt-5">
 				<div class="col-md-12 text-center">
-
-					<p class="copyright">
-						Created By DOGGY STYLE | @2025 <i class="fa fa-heart" aria-hidden="true"></i>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-
 
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
