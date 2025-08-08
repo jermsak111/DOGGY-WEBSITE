@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# ให้ URL แบบไม่มี .html ก็ใช้งานได้
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
