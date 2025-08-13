@@ -254,22 +254,25 @@
 
 
 
-				<!-- Sidebar -->
-				<div id="offcanvasSidebar" class="offcanvas-custom">
-					<div class="offcanvas-header">
-						<h2>CART</h2>
-						<button onclick="closeSidebar()" class="btn-close">&times;</button>
+				<form action="order.html">
+					<!-- Sidebar -->
+					<div id="offcanvasSidebar" class="offcanvas-custom">
+						<div class="offcanvas-header">
+							<h2>CART</h2>
+							<button onclick="closeSidebar()" class="btn-close">&times;</button>
+						</div>
+						<div class="offcanvas-body">
+							<p>รายการเมนูที่สั่ง</p>
+							<li>เค้กสตอเบอรี่</li>
+							<li>เค้กนมสด</li>
+							<li>น้ำส้ม</li>
+							<li>แก้วน้ำลายน้องหมา</li>
+							<br>
+							<input type="submit" value="ยืนยันออเดอร์" onclick="alert('ยืนยันออเดอร์')"
+								class="btn btn-success">
+						</div>
 					</div>
-					<div class="offcanvas-body">
-						<p>รายการเมนูที่สั่ง</p>
-						<li>เค้กสตอเบอรี่</li>
-						<li>เค้กนมสด</li>
-						<li>น้ำส้ม</li>
-						<li>แก้วน้ำลายน้องหมา</li>
-						<br>
-						<a href="order.html" class="btn btn-success d-block px-2 py-3">ยืนยันออเดอร์</a>
-					</div>
-				</div>
+				</form>
 
 
 	</section>

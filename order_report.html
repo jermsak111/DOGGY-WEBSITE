@@ -20,71 +20,111 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="col-md-5">
-        <div class="contact-wrap w-100 p-md-5 p-4">
-            <h3 class="mb-4">รายการสินค้า</h3>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">รายการ</th>
-                        <th scope="col">จำนวน</th>
-                        <th scope="col">ราคา</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>เค้กนมสด</td>
-                        <td>1 ชิ้น</td>
-                        <td>50 บาท</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>กระเป๋า</td>
-                        <td>1 ใบ</td>
-                        <td>50 บาท</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>น้ำส้ม</td>
-                        <td>1 ขวด</td>
-                        <td>50 บาท</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>ข้าวผัด</td>
-                        <td>1 จาน</td>
-                        <td>50 บาท</td>
-                    </tr>
-                    <thead>
-                        <tr>
-                            <th scope="col">></th>
-                            <th scope="col">รวม</th>
-                            <th scope="col">250</th>
-                            <th scope="col">บาท</th>
-                        </tr>
-                    </thead>
-                </tbody>
-            </table>
+<body onload="window.print()">
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="contact-wrap w-100 p-md-5 p-4">
+                        <h3 class="mb-4">Order Customer</h3>
+                        <form action="" id="contactForm" name="contactForm" class="contactForm">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="label" for="name">ชื่อ-นามสกุล</label>
+                                        <input type="text" class="form-control" value="ผู้ช่วยศาสตราจารย์ ยักษ์ใหญ่ ยักษ์เล็ก" disabled name="name" id="name"
+                                            placeholder="ชื่อ-นามสกุล">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="label" for="email">เบอร์โทร</label>
+                                        <input type="number" class="form-control" value="037217315" disabled name="Phone" id="Phone"
+                                            placeholder="เบอร์โทร">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="label" for="email">อีเมล</label>
+                                        <input type="email" class="form-control" value="kmutnb@email.kmutnb.ac.th" disabled name="email" id="email"
+                                            placeholder="เบอร์โทร">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="label" for="#">ที่อยู่</label>
+                                        <textarea name="address" disabled class="form-control" id="address" cols="20" rows="4"
+                                            placeholder="address">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี ตึกคณะคณะเทคโนโลยีและการจัดการอุตสาหกรรม อำเภอเมืองปราจีนบุรี ตำบลเนินหอม จังหวัดปราจีนบุรี</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="label" for="#">ธนาคาร</label>
+                                        <p>ธนาคารไทยพาณิชย์ : 123-456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <center><img src="images/money.jpg" class="img-fluid" width="200">
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="contact-wrap w-100 p-md-5 p-4">
+                        <h3 class="mb-4">รายการสินค้า</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">รายการ</th>
+                                    <th scope="col">จำนวน</th>
+                                    <th scope="col">ราคา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>เค้กนมสด</td>
+                                    <td>1 ชิ้น</td>
+                                    <td>50 บาท</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>กระเป๋า</td>
+                                    <td>1 ใบ</td>
+                                    <td>50 บาท</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>น้ำส้ม</td>
+                                    <td>1 ขวด</td>
+                                    <td>50 บาท</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>ข้าวผัด</td>
+                                    <td>1 จาน</td>
+                                    <td>50 บาท</td>
+                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">></th>
+                                        <th scope="col">รวม</th>
+                                        <th scope="col">250</th>
+                                        <th scope="col">บาท</th>
+                                    </tr>
+                                </thead>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     </section>
-<button type="button" class="btn btn-success">Success</button>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

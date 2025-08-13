@@ -28,7 +28,7 @@
 	.breadcrumbs {
 		font-family: 'Mitr', 'Montserrat', Arial, sans-serif;
 	}
-	
+
 	/* ปิด sidebar และ overlay เป็นค่าปกติ */
 	.offcanvas-custom,
 	.offcanvas-overlay {
@@ -175,7 +175,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 
 	<section class="ftco-section bg-light">
 		<div class="container">
@@ -206,7 +206,7 @@
 					</div>
 				</div>
 				<!-- จบเมนู -->
-				 <!-- เริ่มเมนู -->
+				<!-- เริ่มเมนู -->
 				<div class="col-md-4 ftco-animate">
 					<div class="block-7">
 						<div class="work mb-4 img d-flex align-items-end"
@@ -253,24 +253,25 @@
 
 
 
-
-				<!-- Sidebar -->
-				<div id="offcanvasSidebar" class="offcanvas-custom">
-					<div class="offcanvas-header">
-						<h2>CART</h2>
-						<button onclick="closeSidebar()" class="btn-close">&times;</button>
+				<form action="order.html">
+					<!-- Sidebar -->
+					<div id="offcanvasSidebar" class="offcanvas-custom">
+						<div class="offcanvas-header">
+							<h2>CART</h2>
+							<button onclick="closeSidebar()" class="btn-close">&times;</button>
+						</div>
+						<div class="offcanvas-body">
+							<p>รายการเมนูที่สั่ง</p>
+							<li>เค้กสตอเบอรี่</li>
+							<li>เค้กนมสด</li>
+							<li>น้ำส้ม</li>
+							<li>แก้วน้ำลายน้องหมา</li>
+							<br>
+							<input type="submit" value="ยืนยันออเดอร์" onclick="alert('ยืนยันออเดอร์')"
+								class="btn btn-success">
+						</div>
 					</div>
-					<div class="offcanvas-body">
-						<p>รายการเมนูที่สั่ง</p>
-						<li>เค้กสตอเบอรี่</li>
-						<li>เค้กนมสด</li>
-						<li>น้ำส้ม</li>
-						<li>แก้วน้ำลายน้องหมา</li>
-						<br>
-						<a href="order.html" class="btn btn-success d-block px-2 py-3">ยืนยันออเดอร์</a>
-					</div>
-				</div>
-
+				</form>
 
 	</section>
 	<script src="js/jquery.min.js"></script>
