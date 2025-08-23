@@ -220,10 +220,11 @@
 					<li class="nav-item "><a href="about.html" class="nav-link">About</a></li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							MENU
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
 							<a class="dropdown-item" href="menu-main.html">MENU MAIN</a>
 							<a class="dropdown-item" href="menu-cake.html">MENU CAKE</a>
 							<a class="dropdown-item" href="menu-drink.html">MENU DRINK</a>
@@ -232,11 +233,11 @@
 					</li>
 					<li class="nav-item"><a href="giftshop.html" class="nav-link">GIFTSHOP</a></li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownReview" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							REVIEW
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownReview">
 							<a class="dropdown-item" href="gallery.html">DOG</a>
 							<a class="dropdown-item" href="review-food.html">FOOD</a>
 							<a class="dropdown-item" href="review-location.html">LOCATION</a>
@@ -558,7 +559,8 @@
 						<div class="text-center p-4">
 							<span class="excerpt d-block">อเมริกาโน่ร้อน</span>
 							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
-							<button onclick="openSidebar()" type="button"  class="btn btn-primary d-block px-2 py-3">Add to
+							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add
+								to
 								cart</a>
 						</div>
 					</div>
@@ -584,7 +586,8 @@
 						<div class="text-center p-4">
 							<span class="excerpt d-block">เค้กสตอเบอรี่</span>
 							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
-							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add to
+							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add
+								to
 								cart</a>
 						</div>
 					</div>
@@ -610,7 +613,8 @@
 						<div class="text-center p-4">
 							<span class="excerpt d-block">ชามะนาว</span>
 							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
-							<button onclick="openSidebar()" type="button"  class="btn btn-primary d-block px-2 py-3">Add to
+							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add
+								to
 								cart</a>
 						</div>
 					</div>
@@ -689,6 +693,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -706,6 +711,28 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			// ทำให้ dropdown ทำงานแม้ toggle ไม่ทำงาน
+			$('.dropdown-toggle').on('click', function (e) {
+				e.preventDefault();
+				var $dropdownMenu = $(this).next('.dropdown-menu');
+
+				// ซ่อน dropdown อื่น ๆ
+				$('.dropdown-menu').not($dropdownMenu).removeClass('show');
+
+				// toggle dropdown ที่กด
+				$dropdownMenu.toggleClass('show');
+			});
+
+			// คลิกนอก dropdown เพื่อปิด
+			$(document).on('click', function (e) {
+				if (!$(e.target).closest('.dropdown').length) {
+					$('.dropdown-menu').removeClass('show');
+				}
+			});
+		});
+	</script>
 	<script>
 		function openSidebar() {
 			document.getElementById('offcanvasSidebar').classList.add('active');
