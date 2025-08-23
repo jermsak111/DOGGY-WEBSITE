@@ -119,11 +119,92 @@
 				margin-bottom: 60px;
 			}
 		}
+
+		.excerpt,
+		.price,
+		.offcanvas-body,
+		.breadcrumbs {
+			font-family: 'Mitr', 'Montserrat', Arial, sans-serif;
+		}
+
+		/* ปิด sidebar และ overlay เป็นค่าปกติ */
+		.offcanvas-custom,
+		.offcanvas-overlay {
+			position: fixed;
+			top: 0;
+			right: 0;
+			/* ← เปลี่ยนจาก left: 0 เป็น right: 0 */
+			left: auto;
+			/* เพิ่มบรรทัดนี้เพื่อกันซ้อนกับ left */
+			height: 100%;
+			z-index: 1050;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		/* Sidebar */
+		.offcanvas-custom {
+			width: 300px;
+			background-color: #fff;
+			box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+			/* เงาจากขวา */
+			transform: translateX(100%);
+			overflow-y: auto;
+		}
+
+		/* Header และ body */
+		.offcanvas-header {
+			padding: 16px;
+			background: #f1f1f1;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.offcanvas-body {
+			padding: 16px;
+		}
+
+		/* ปุ่มปิด */
+		.btn-close {
+			font-size: 24px;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+
+		/* ปุ่มเปิด */
+		.btn-open {
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+		}
+
+		/* overlay ด้านหลัง */
+		.offcanvas-overlay {
+			width: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			transform: translateX(-100%);
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		/* แสดง sidebar */
+		.offcanvas-custom.active {
+			transform: translateX(0);
+		}
+
+		/* แสดง overlay */
+		.offcanvas-overlay.active {
+			transform: translateX(0);
+			opacity: 1;
+		}
 	</style>
 </head>
 
 <body>
-	
+
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">
@@ -208,7 +289,8 @@
 						</div>
 						<div class="media-body">
 							<h3 class="heading">สามารถพาน้องหมาไปวิ่งเล่น/ออกกำลังกายได้</h3>
-							<p>พื้นที่โล่งให้เจ้าตูบได้วิ่งเล่นเต็มที่ พร้อมบรรยากาศธรรมชาติสุดชิลสำหรับทุกคนในครอบครัว</p>
+							<p>พื้นที่โล่งให้เจ้าตูบได้วิ่งเล่นเต็มที่ พร้อมบรรยากาศธรรมชาติสุดชิลสำหรับทุกคนในครอบครัว
+							</p>
 							<a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
 									class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
 						</div>
@@ -222,7 +304,8 @@
 						</div>
 						<div class="media-body">
 							<h3 class="heading">อาหารน้องหมาโภชนาการครบถ้วน</h3>
-							<p>เมนูอาหารครบถ้วนทั้ง 5 หมู่ เพื่อสุขภาพน้องหมาที่แข็งแรง เพราะเราเชื่อว่าอาหารดี คือพื้นฐานสุขภาพดี อาหารน้องหมาของเราจึงครบ 5 หมู่ หลากหลายเมนูเพื่อเจ้าตัวเล็ก</p>
+							<p>เมนูอาหารครบถ้วนทั้ง 5 หมู่ เพื่อสุขภาพน้องหมาที่แข็งแรง เพราะเราเชื่อว่าอาหารดี
+								คือพื้นฐานสุขภาพดี อาหารน้องหมาของเราจึงครบ 5 หมู่ หลากหลายเมนูเพื่อเจ้าตัวเล็ก</p>
 							<a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
 									class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
 						</div>
@@ -235,7 +318,8 @@
 						</div>
 						<div class="media-body">
 							<h3 class="heading">ตัดขนสัตว์และตรวจสุขภาพฟรี</h3>
-							<p>ตัดขนฟรี พร้อมตรวจสุขภาพเบื้องต้น โดยทีมมืออาชีพ ดูแลอย่างใส่ใจ เพราะเราเข้าใจว่าสุขภาพและความสวยงามของน้องหมาสำคัญแค่ไหน</p>
+							<p>ตัดขนฟรี พร้อมตรวจสุขภาพเบื้องต้น โดยทีมมืออาชีพ ดูแลอย่างใส่ใจ
+								เพราะเราเข้าใจว่าสุขภาพและความสวยงามของน้องหมาสำคัญแค่ไหน</p>
 							<a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
 									class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
 						</div>
@@ -271,7 +355,8 @@
 									class="fa fa-camera"></span></div>
 							<div class="text pl-3">
 								<h4>พื้นที่ถ่ายรูปสวยและบรรยากาศดี</h4>
-								<p>เงียบสงบ เหมาะกับการพักผ่อน มุมถ่ายรูปสุดเก๋ พร้อมแสงธรรมชาติ แต่งร้านอย่างมีสไตล์ ถ่ายมุมไหนก็ปัง</p>
+								<p>เงียบสงบ เหมาะกับการพักผ่อน มุมถ่ายรูปสุดเก๋ พร้อมแสงธรรมชาติ แต่งร้านอย่างมีสไตล์
+									ถ่ายมุมไหนก็ปัง</p>
 							</div>
 						</div>
 						<div class="col-md-6 services-2 w-100 d-flex">
@@ -279,7 +364,8 @@
 									class="fa fa-cutlery"></span></div>
 							<div class="text pl-3">
 								<h4>อาหารสะอาดปลอดภัย</h4>
-								<p>อาหารสะอาด ปรุงสดใหม่ทุกวัน สะอาดทุกขั้นตอน ปลอดภัยทุกคำ ให้คุณอิ่มอร่อยแบบสบายใจในทุกมื้อ</p>
+								<p>อาหารสะอาด ปรุงสดใหม่ทุกวัน สะอาดทุกขั้นตอน ปลอดภัยทุกคำ
+									ให้คุณอิ่มอร่อยแบบสบายใจในทุกมื้อ</p>
 							</div>
 						</div>
 						<div class="col-md-6 services-2 w-100 d-flex">
@@ -445,6 +531,115 @@
 		</div>
 	</section>
 
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row justify-content-center pb-5 mb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h2>เมนูยอดนิยม</h2>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<!-- เริ่มเมนู -->
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7">
+						<div class="work mb-4 img d-flex align-items-end"
+							style="background-image: url(images/drink/CaffeAmericano.jpg); background-size: cover; width: 350px; height: 350px; ">
+							<a href="images/drink/CaffeAmericano.jpg"
+								class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="fa fa-expand"></span>
+							</a>
+							<div class="desc w-100 px-4">
+								<div class="text w-100 mb-3">
+									<span>COFFEE</span>
+									<h2>อเมริกาโน่ร้อน</h2>
+								</div>
+							</div>
+						</div>
+						<div class="text-center p-4">
+							<span class="excerpt d-block">อเมริกาโน่ร้อน</span>
+							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
+							<button onclick="openSidebar()" type="button"  class="btn btn-primary d-block px-2 py-3">Add to
+								cart</a>
+						</div>
+					</div>
+				</div>
+				<!-- จบเมนู -->
+
+				<!-- เริ่มเมนู -->
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7">
+						<div class="work mb-4 img d-flex align-items-end"
+							style="background-image: url(images/cake/cake2.jpg); background-size: cover; width: 350px; height: 350px; ">
+							<a href="images/cake/cake2.jpg"
+								class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="fa fa-expand"></span>
+							</a>
+							<div class="desc w-100 px-4">
+								<div class="text w-100 mb-3">
+									<span>CAKE</span>
+									<h2>เค้กสตอเบอรี่</h2>
+								</div>
+							</div>
+						</div>
+						<div class="text-center p-4">
+							<span class="excerpt d-block">เค้กสตอเบอรี่</span>
+							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
+							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add to
+								cart</a>
+						</div>
+					</div>
+				</div>
+				<!-- จบเมนู -->
+
+				<!-- เริ่มเมนู -->
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7">
+						<div class="work mb-4 img d-flex align-items-end"
+							style="background-image: url(images/drink/lemonTea.jpeg); background-size: cover; width: 350px; height: 350px; ">
+							<a href="images/drink/lemonTea.jpeg"
+								class="icon image-popup d-flex justify-content-center align-items-center">
+								<span class="fa fa-expand"></span>
+							</a>
+							<div class="desc w-100 px-4">
+								<div class="text w-100 mb-3">
+									<span>DRINK</span>
+									<h2>ชามะนาว</h2>
+								</div>
+							</div>
+						</div>
+						<div class="text-center p-4">
+							<span class="excerpt d-block">ชามะนาว</span>
+							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
+							<button onclick="openSidebar()" type="button"  class="btn btn-primary d-block px-2 py-3">Add to
+								cart</a>
+						</div>
+					</div>
+				</div>
+				<!-- จบเมนู -->
+			</div>
+		</div>
+		<form action="order.html">
+			<!-- Sidebar -->
+			<div id="offcanvasSidebar" class="offcanvas-custom">
+				<div class="offcanvas-header">
+					<h2>CART</h2>
+					<button onclick="closeSidebar()" class="btn-close" type="button">&times;</button>
+				</div>
+				<div class="offcanvas-body">
+					<p>รายการเมนูที่สั่ง โต๊ะ : 5</p>
+					<li>เค้กสตอเบอรี่</li>
+					<li>เค้กนมสด</li>
+					<li>น้ำส้ม</li>
+					<li>แก้วน้ำลายน้องหมา</li>
+					<br>
+					<input type="submit" value="ยืนยันออเดอร์" onclick="alert('ยืนยันออเดอร์')" class="btn btn-success">
+				</div>
+			</div>
+		</form>
+	</section>
+
+
+
 	<br>
 	<br>
 	<footer class="footer">
@@ -492,18 +687,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="row mt-5">
-				<div class="col-md-12 text-center">
-
-					<!-- loader -->
-					<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-							<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-								stroke="#eeeeee" />
-							<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-								stroke-miterlimit="10" stroke="#F96D00" />
-						</svg></div>
-				</div>
-			</div>
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
@@ -523,9 +706,17 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		function openSidebar() {
+			document.getElementById('offcanvasSidebar').classList.add('active');
+			document.getElementById('offcanvasOverlay').classList.add('active');
+		}
 
-
-
+		function closeSidebar() {
+			document.getElementById('offcanvasSidebar').classList.remove('active');
+			document.getElementById('offcanvasOverlay').classList.remove('active');
+		}
+	</script>
 </body>
 
 </html>
