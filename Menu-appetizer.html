@@ -28,7 +28,7 @@
 	.breadcrumbs {
 		font-family: 'Mitr', 'Montserrat', Arial, sans-serif;
 	}
-	
+
 	/* ปิด sidebar และ overlay เป็นค่าปกติ */
 	.offcanvas-custom,
 	.offcanvas-overlay {
@@ -125,7 +125,7 @@
 							MENU
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="menu-main.html">MENU APPETIZER</a>
+                            <a class="dropdown-item" href="menu-main.html">MENU APPETIZER</a>
 							<a class="dropdown-item" href="menu-main.html">MENU MAIN</a>
 							<a class="dropdown-item" href="menu-cake.html">MENU CAKE</a>
 							<a class="dropdown-item" href="menu-drink.html">MENU DRINK</a>
@@ -171,62 +171,74 @@
 					<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home<i
 									class="ion-ios-arrow-forward"></i></a></span><span>> MENU <i
 								class="ion-ios-arrow-forward"></i></span></p>
-					<h1 class="mb-0 bread">MENU COFFEE </h1>
+					<h1 class="mb-0 bread">MENU MAIN </h1>
 				</div>
 			</div>
 		</div>
 	</section>
-	
 
 	<section class="ftco-section bg-light">
 		<div class="container">
 			<div class="row">
-
+				<!-- <div class="col-md-3">
+					<div class="list-group" id="list-tab" role="tablist">
+						<a class="list-group-item list-group-item-action active" id="list-home-list"
+							data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+						<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+							href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+						<a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+							href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+						<a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+							href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+					</div>
+				</div> -->
 				<!-- เริ่มเมนู -->
 				<div class="col-md-4 ftco-animate">
 					<div class="block-7">
 						<div class="work mb-4 img d-flex align-items-end"
-							style="background-image: url(images/drink/CaffeAmericano.jpg); background-size: cover; width: 350px; height: 350px; ">
-							<a href="images/drink/CaffeAmericano.jpg"
+							style="background-image: url(images/cake/cake1.jpg);">
+							<a href="images/cake/cake1.jpg"
 								class="icon image-popup d-flex justify-content-center align-items-center">
 								<span class="fa fa-expand"></span>
 							</a>
 							<div class="desc w-100 px-4">
 								<div class="text w-100 mb-3">
-									<span>COFFEE</span>
-									<h2>อเมริกาโน่ร้อน</h2>
+									<span>CAKE</span>
+									<h2>เค้กนมสด</h2>
 								</div>
 							</div>
 						</div>
 						<div class="text-center p-4">
-							<span class="excerpt d-block">อเมริกาโน่ร้อน</span>
+							<span class="excerpt d-block">เค้กนมสด</span>
 							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
-							<button onclick="openSidebar()" type="button"  class="btn btn-primary d-block px-2 py-3">Add to
+							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add
+								to
 								cart</a>
 						</div>
 					</div>
 				</div>
 				<!-- จบเมนู -->
-				 <!-- เริ่มเมนู -->
+				<!-- เริ่มเมนู -->
 				<div class="col-md-4 ftco-animate">
 					<div class="block-7">
 						<div class="work mb-4 img d-flex align-items-end"
-							style="background-image: url(images/drink/latte.png); background-size: cover; width: 350px; height: 350px; ">
-							<a href="images/drink/latte.png"
+							style="background-image: url(images/cake/cake2.jpg);">
+							<a href="images/cake/cake2.jpg"
 								class="icon image-popup d-flex justify-content-center align-items-center">
 								<span class="fa fa-expand"></span>
 							</a>
 							<div class="desc w-100 px-4">
 								<div class="text w-100 mb-3">
-									<span>COFFEE</span>
-									<h2>ลาเต้</h2>
+									<span>CAKE</span>
+									<h2>เค้กสตอเบอรี่</h2>
 								</div>
 							</div>
 						</div>
 						<div class="text-center p-4">
-							<span class="excerpt d-block">ลาเต้</span>
+							<span class="excerpt d-block">เค้กสตอเบอรี่</span>
 							<span class="price"><sup>฿</sup> <span class="number">20</span> <sub>/บาท</sub></span>
-							<button onclick="openSidebar()" type="button"  class="btn btn-primary d-block px-2 py-3">Add to
+							<button onclick="openSidebar()" type="button" class="btn btn-primary d-block px-2 py-3">Add
+								to
 								cart</a>
 						</div>
 					</div>
@@ -260,7 +272,7 @@
 					<div id="offcanvasSidebar" class="offcanvas-custom">
 						<div class="offcanvas-header">
 							<h2>CART</h2>
-							<button onclick="closeSidebar()" class="btn-close" type="button" type="button" type="button">&times;</button>
+							<button onclick="closeSidebar()" class="btn-close" type="button">&times;</button>
 						</div>
 						<div class="offcanvas-body">
 							<p>รายการเมนูที่สั่ง โต๊ะ : 5</p>
