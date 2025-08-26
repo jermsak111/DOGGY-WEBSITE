@@ -9823,3 +9823,7 @@ textarea.form-control {
     height: 1px; /* ความหนาของเส้นที่สอง */
     background-color: #fff;
 }
+
+.payment {
+  width: 400px;
+}
