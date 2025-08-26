@@ -650,7 +650,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+				<div class="col-md-6 col-lg-2 mb-4 mb-md-0">
 					<h2 class="footer-heading">DOGGY CAFE !</h2>
 					<p>รอยยิ้มมาก</p>
 					<ul class="ftco-footer-social p-0">
@@ -677,7 +677,7 @@
 						<li><a href="./faq.html" class="py-2 d-block">Q&A</a></li>
 					</ul>
 				</div>
-				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+				<div class="col-md-6 col-lg-4 mb-4 mb-md-0">
 					<h2 class="footer-heading">Contact info</h2>
 					<div class="block-23 mb-3">
 						<ul>
@@ -687,8 +687,7 @@
 							<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">037 217
 										300</span></a></li>
 							<li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-										class="text">kmutnb@email.kmutnb.ac.th</span></a></li>
-							<li><img src="./images/payment/payment-removebg-preview.png" alt="payment" class="payment"></li>
+										class="text">kmutnb@email.kmutnb.ac.th <img src="./images/payment/payment-removebg-preview.png" width="300px"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -713,28 +712,6 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		$(document).ready(function () {
-			// ทำให้ dropdown ทำงานแม้ toggle ไม่ทำงาน
-			$('.dropdown-toggle').on('click', function (e) {
-				e.preventDefault();
-				var $dropdownMenu = $(this).next('.dropdown-menu');
-
-				// ซ่อน dropdown อื่น ๆ
-				$('.dropdown-menu').not($dropdownMenu).removeClass('show');
-
-				// toggle dropdown ที่กด
-				$dropdownMenu.toggleClass('show');
-			});
-
-			// คลิกนอก dropdown เพื่อปิด
-			$(document).on('click', function (e) {
-				if (!$(e.target).closest('.dropdown').length) {
-					$('.dropdown-menu').removeClass('show');
-				}
-			});
-		});
-	</script>
 	<script>
 		function openSidebar() {
 			document.getElementById('offcanvasSidebar').classList.add('active');
